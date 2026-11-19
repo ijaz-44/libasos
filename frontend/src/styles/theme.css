@@ -1,0 +1,52 @@
+@theme {
+  /* Core Brand Accent (#E05263 in OKLCH) */
+  --color-primary: oklch(61.5% 0.185 15deg);
+  --color-primary-hover: oklch(54.5% 0.185 15deg);
+  --color-primary-soft: oklch(96.5% 0.022 15deg);
+  --color-primary-foreground: oklch(100% 0 0deg);
+
+  /* Secondary Accent */
+  --color-secondary: oklch(40.5% 0.06 15deg);
+  --color-secondary-hover: oklch(32% 0.055 15deg);
+  --color-secondary-soft: oklch(94.5% 0.015 15deg);
+  --color-secondary-foreground: oklch(100% 0 0deg);
+
+  /* Header (#fff2f5) & Footer (#e8dcdf) in OKLCH */
+  --color-header-bg: oklch(96.8% 0.022 12deg);
+  --color-header-line: oklch(89.5% 0.042 14deg);
+  --color-header-height: 4rem;
+  --color-header-height-mobile: 3.5rem;
+
+  --color-footer-bg: oklch(90.5% 0.02 12deg);
+  --color-footer-line: oklch(82.5% 0.032 14deg);
+  --color-footer-text: oklch(24% 0.018 15deg);
+  --color-footer-muted: oklch(46% 0.022 15deg);
+
+  /* Page Surfaces & Text */
+  --color-bg: oklch(99.2% 0.004 15deg);
+  --color-surface: oklch(100% 0 0deg);
+  --color-surface-muted: oklch(96.5% 0.008 15deg);
+  --color-text: oklch(20% 0.012 15deg);
+  --color-text-muted: oklch(45% 0.015 15deg);
+  --color-border: oklch(91% 0.014 15deg);
+  --color-border-strong: oklch(83% 0.02 15deg);
+
+  /* Semantic Status */
+  --color-success: oklch(52% 0.13 155deg);
+  --color-warning: oklch(66% 0.15 70deg);
+  --color-danger: oklch(54.5% 0.185 15deg);
+
+  /* Typography Tokens (Selected from Your List) */
+  --font-header: "Federo", "Krona One", "Space Grotesk", sans-serif;
+  --font-ui: "Urbanist", "Space Grotesk", "Manrope", sans-serif;
+  --font-content: "Manrope", "Urbanist", sans-serif;
+
+  /* Radii & Shadows */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 6px 24px -6px oklch(20% 0.012 15deg / 0.06);
+  --shadow-popover: 0 12px 32px -8px oklch(20% 0.012 15deg / 0.14);
+}

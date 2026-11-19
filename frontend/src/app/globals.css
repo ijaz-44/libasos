@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-content);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-content);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  header,
+  .site-header,
+  .modal-header,
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-header);
+  }
+
+  header,
+  .site-header {
+    position: relative;
+    width: 100%;
+    min-height: var(--color-header-height-mobile);
+    background-color: var(--color-header-bg);
+    border-bottom: 1px solid var(--color-header-line);
+  }
+
+  @media (min-width: 768px) {
+    header,
+    .site-header {
+      min-height: var(--color-header-height);
+    }
+  }
+
+  footer,
+  .site-footer {
+    width: 100%;
+    background-color: var(--color-footer-bg);
+    border-top: 1px solid var(--color-footer-line);
+    color: var(--color-footer-text);
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  nav,
+  [role="listbox"],
+  [role="menu"] {
+    font-family: var(--font-ui);
+  }
+
+  .content-copy,
+  .prose-copy {
+    font-family: var(--font-content);
+  }
+
+  ::selection {
+    background-color: var(--color-primary-soft);
+    color: var(--color-primary-hover);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
